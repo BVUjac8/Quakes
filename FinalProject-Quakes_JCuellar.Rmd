@@ -1,0 +1,42 @@
+---
+title: "Final Project"
+author: "Julia Cuellar"
+date: '2021-6-5'
+output:
+  html_document: default
+  word_document: default
+  pdf_document: default
+---
+    
+    
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Clustering Model of Depth of an Earthquake
+```{r eval = TRUE, echo = FALSE, message = FALSE, warning = FALSE}
+library(knitr)
+library(latexpdf)
+library(tinytex)
+setwd("C:/Users/jcuel/Videos/Bellevue/Spring 2021/Professor Werner/Final Project")
+quakes_df = read.csv("quakes.csv")
+library(dplyr)
+quakes_df = quakes_df %>% select(-X)
+set.seed(250)
+quakes_cluster_depth = kmeans(quakes_df$depth, 25, nstart = 50)
+quakes_cluster_depth
+library(ggplot2)
+ggplot(quakes_df, aes(lat, long, color = quakes_cluster_depth$cluster)) + geom_point() + ggtitle("Depth of an Earthquake")
+```
+
+## Clustering Model of Magnitude of an Earthquake
+```{r eval = TRUE, echo = FALSE, message = FALSE, warning = FALSE}
+setwd("C:/Users/jcuel/Videos/Bellevue/Spring 2021/Professor Werner/Final Project")
+quakes_df = read.csv("quakes.csv")
+library(dplyr)
+quakes_df = quakes_df %>% select(-X)
+set.seed(5)
+quakes_cluster_mag = kmeans(quakes_df$mag, 5, nstart = 10)
+quakes_cluster_mag
+ggplot(quakes_df, aes(lat, long, color = quakes_cluster_mag$cluster)) + geom_point() + ggtitle("Magnitude of an Earthquake")
+```
