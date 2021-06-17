@@ -34,5 +34,4 @@ Collaboration can be made to make this more of a predictive analysis instead of 
 _Mt. Fuji is the highest mountain in Japan and an active volcano; the Hōei eruption of 1707
 has an assumption of a correlated relationship between earthquakes and volcanic eruptions. A
 predictive analysis will be performed to determine what factors from seismic activity could cause
-a potential catastrophic natural disaster (i.e. volcanic eruption) to chance in the country of Japan.
- _
+a potential catastrophic natural disaster (i.e. volcanic eruption) to chance in the country of Japan._
