@@ -9,7 +9,7 @@ A predictive analysis of earthquakes near Mt. Fuji.
 5. [FAQs](#faqs)
 ### General Info
 ***
-A predictive analysis of earthquakes near Mt. Fuji was determining the correlation between earthquakes and volcanic eruptions based off of factors of an earthquakes (depth, magnitude, and lattitude & longitude).
+A predictive analysis of earthquakes near Mt. Fuji was determining the correlation between earthquakes and volcanic eruptions based off of factors of an earthquake (depth, magnitude, and lattitude & longitude).
 ### Hoei eruption of 1707
 ![Hoei eruption of 1707](https://www.eri.u-tokyo.ac.jp/VRC/vrc/fuji1707.jpg)
 ### Technologies
