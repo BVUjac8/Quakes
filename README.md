@@ -24,7 +24,7 @@ A predictive analysis of earthquakes near Mt. Fuji was determining the correlati
 * [Adobe PDF](https://acrobat.adobe.com/us/en/acrobat/pdf-reader.html): Any version
 ### Installation
 ***
-Python & Pycharm should be downloaded from website, all others should be standardly included.
+Python & Pycharm and R & R Studio should be downloaded from website, all others should be standardly included.
 ### Collaboration
 ***
 Collaboration can be made to make this more of a predictive analysis instead of a data analysis or research project.
